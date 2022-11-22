@@ -1,11 +1,11 @@
 import { describe, it, expect } from "vitest";
 
 import { mount } from "@vue/test-utils";
-import HelloWorld from "../HelloWorld.vue";
+import TheHeader from "../TheHeader.vue";
 
-describe("HelloWorld", () => {
+describe("TheHeader", () => {
   it("renders properly", () => {
-    const wrapper = mount(HelloWorld, { props: { msg: "Hello Vitest" } });
-    expect(wrapper.text()).toContain("Hello Vitest");
+    const wrapper = mount(TheHeader, { props: { msg: "App Learning App" } });
+    expect(wrapper.text()).toContain("App Learning App");
   });
 });
